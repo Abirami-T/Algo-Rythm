@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>search</title>
+    </head>
+    <body>
+        <center>
+            <h1>all algo</h1>
+            <table border="1">
+                <tr>
+                    <th>topic</th>
+                    <th>vedio link</th>
+                    <th>image</th>
+                </tr>
+                <% item.forEach (function(item){%>
+                <tr>
+                    <td><%=item.topic%></td>
+                    <td><a href="<%=item.video%>"><%=item.video%></a></td>
+                    <td><a href="<%=item.image%>">%=item.topic%> algorithm</a></td>
+                </tr>
+                <%})%>
+            </table>
+        </center>
+    </body>
+</html>

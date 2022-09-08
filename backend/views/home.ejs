@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>uploading algorithm contents</title>
+    </head>
+    <body>
+        <center>
+            <pre>
+                <form action="/admin/post" method="POST" enctype="multipart/form-data">
+                    <label><b>name</b></label>
+                    <input type="text" name="name" placeholder="Name">
+
+                    <label><b>topic</b></label>
+                    <input type="text" name="topic" placeholder="topic">
+
+                    <label><b>field</b></label>
+                    <input type="text" name="field" placeholder="working field">
+
+                    <label for="url"><b>upload video link</b></label>
+                    <input type="url" name="video" placeholder="video link">
+
+                    <label for="image"><b>upload image</b></label>
+                    <input type="file" name="image" multiple="multiple">
+
+               <!---   <label for="image"><b>upload traversal (qrcode form)</b></label>
+                  <input type="file" name="qrimage">  -->
+
+                    <button type="submit">save</button>
+                </form>
+            </pre>
+        </center>
+    </body>
+</html>
