@@ -1,0 +1,129 @@
+* {
+    font-family: sans-serif; /* Change your font family */
+  }
+  
+  .content-table {
+    margin-left: 200px;
+   
+    border-collapse: collapse;
+    
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   
+  }
+  
+  .content-table thead tr {
+    padding-left: 20%;
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+.para{
+    margin-left: 200px;
+
+}
+
+  .search-box{
+   
+    position:absolute;
+    margin-left: 100px;
+    left: 30%;
+    transform: translate(-100%,-50%);
+    background: #498deb;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 100px;
+
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 3px;
+    top: 50px;
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background: #32c6d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;   
+ line-height: 40px;
+ width: 0px;
+}
+  
+.p{
+  margin-left: 200px;
+}
+.commentbox{
+ text-decoration-color: black;
+  padding-right: 30px;
+  background: #498deb;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 100px;
+    width: 400px;
+    border-color: black;
+}
+.comment{
+  border-radius: 10px;
+  border-color: black;
+  width: 400px;
+  
+}
+.commentb{
+  text-decoration-color: black;
+  
+   width: 400px;
+     height: 40px;
+     border-radius: 40px;
+    
+     border-color: black;
+ 
+ }
+ .cn{
+  margin-left: 200px;
+  border:5px;
+  border-color: black;
+ }

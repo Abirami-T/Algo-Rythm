@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="../../../assets/Ak.jpg" height="100%" width="100%">
+        </div>
+        <div class="col-md-4 mt-3 mb-2">
+            <h3 class="text-success text-center"><b>Algo Rythm</b></h3>
+
+            <form action="" class="mt-5 p-5">
+                <h5 class="text-primary mb-3">Login </h5>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username" [(ngModel)]="Email"><!---[(ngModel)]="Email"    [(ngModel)]="Password"   [(ngModel)]="role"-->
+                    <label for="floatingInput">Email address</label>
+                </div>
+                  <div class="form-floating mb-3">
+                    
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+
+
+                  <div class="form-floating mb-3">
+                    
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="role" name="role" [(ngModel)]="role">
+                    <label for="floatingInput">role</label>
+                  </div>
+                 
+
+             
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="button" (click)="signin()" >Login</button>
+                  </div>
+                  <p>Not an User</p><a routerLink="/signup" class="text-primary" style="text-decoration: none;">click here </a>
+            </form>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>

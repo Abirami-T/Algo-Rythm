@@ -1,0 +1,71 @@
+  <br>
+<br>
+
+<form class="search-box">
+  <input class="search-txt" type="text" name="searchsText" placeholder="search"   [(ngModel)]="searchText">
+  
+</form>
+
+
+<body padding="100%"  margin="40px 0">
+<br><br>
+<table class="content-table">
+  <thead>  
+  <tr>
+        <th >sno.</th>
+            
+        <th>topic</th>
+        <th>vedio</th>
+        <th>spark notation algorithm</th>
+        <th>Traversal link</th>
+        
+      <!---  <th>image</th>  -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList | filter:searchText index as i"  class="active-row">
+      <th>{{i + 1}}</th>
+       
+        <td>{{user.topic}}</td>
+        <td><a href="{{user.video}}">{{user.video}}</a></td>
+        <td><a href="{{user.image}}">{{user.topic}} algorithm</a></td>
+        <td><a href="{{user.links}}">{{user.topic}} traversal</a></td>
+       
+      <!---    <td><a href="{{ user.video }}">{{ user.video }}</a></td>
+      <td><a href="<%=item.image%>">%=item.topic%> algorithm</a></td>  -->
+    </tr>
+  </tbody>
+  </table>
+<br>
+<br>
+
+
+
+  <p class="para">want to upload ?<a routerLink="/admin" class="text-primary" style="text-decoration: none;"><br>click here </a></p>
+
+ 
+           <br>
+           
+  <p class="p">
+   <input class="commentb" placeholder="name" name="Name" [(ngModel)]="Name">
+   <br>
+   <br>
+    <textarea class="comment" placeholder="Type your Issue or give review" name="comment" border="5px" rows="4" [(ngModel)]="comment"></textarea>
+    <br>
+     <button class="commentbox"  (click)="posting()"  (click)="reloads()" >post</button>
+     <br>
+     </p>
+
+     <table class="cn">
+      <tr><th>comments</th></tr>
+    <tr *ngFor="let com of commentlist">
+      <th>{{com.Name}}   :  </th>
+      <td>{{com.comment}}</td>
+      <br>
+    </tr>
+   </table>
+ <br><br><br><br>
+
+</body>
+
+
